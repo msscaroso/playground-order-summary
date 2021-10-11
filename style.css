@@ -1,20 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;500&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
 html {
     background-color: #e1e9fc;
 }
 
-.background-pattern {
-    position: absolute;
-    z-index: -1;
-    width: 100%;
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
 }
+
 .box {
     background-color: #FFFFFF;
-    margin: 102px auto 0;
     width: 450px;
-    height: 697px;
+    height: 600px;
     border-radius: 10px;
+
 }
 
 .top-image {
@@ -53,22 +61,26 @@ html {
     border-radius: 10px;
     height: 98px;
     overflow: hidden;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .internal-plan-box {
     display: flex;
-    margin: 25px 24px;
-    justify-content: space-between;
-    /*background-color: brown;*/
+    width: 90%;
+    align-items: center;
 }
 
-.item-box {
-    display: flex;
+
+.plan-box img {
+    margin: 5%;
 }
 
-.item-box > div {
-    margin-left: 20px;
+
+.abc {
+    margin-right: 30%;
 }
 
 .change-button {
